@@ -1,0 +1,543 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+
+    background-image: url('Casas/hogwarts.jpg');
+    background-size: cover;
+    font-size: 62.5%;
+    background-repeat: no-repeat;
+}
+
+h3 {
+
+    font-size: 4rem;
+}
+
+label{
+
+    font-size: 2rem;
+}
+
+body {
+
+    width: 80%;
+    margin: auto;
+    background: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+
+}
+.header{
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    align-items: center;
+    
+
+}
+
+.contenedor{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Imagen-hogwarts{
+
+    width: 20rem;
+    height: 20rem;
+}
+
+.information{
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+
+form input {
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 1rem;
+    background-color: beige;
+
+}
+
+form label {
+
+    color: white;
+}
+
+#cualidad{
+
+    background-color: beige;
+    color: gray;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+form button {
+
+    padding: 1rem 2rem 1rem 2rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    margin: 3rem auto auto auto;
+    border: none;
+    color: gray;  
+}
+
+form button:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+.datosEstudiante{
+
+    padding: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #E3BE79;
+    margin-top: 6rem;
+    position: relative;
+    display: none;
+    z-index: 100;
+    top: -66rem;
+    left: -0;
+    right: -0;
+    bottom: -0;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    margin-top: 21rem;
+    box-shadow: 0.5rem 1rem 5rem 1rem black;
+
+}
+
+
+.datosEstudiante h2 {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+}
+
+#data{
+
+    background-color: rgb(40, 255, 76);
+    color: black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+#linaje{
+
+    background-color: beige;
+    color: gray;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.details {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40rem;
+    font-size: 3rem;
+    
+}
+.register{
+
+    color:rgb(2, 219, 2);
+}
+
+.groupData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectHouse {
+
+    padding: 1rem 5rem 1rem 5rem;
+    width: 30rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 3rem;
+    background-color: white;
+
+}
+
+.selectHouse:hover {
+
+    background-color: greenyellow;
+    color: black;
+}
+
+.seleccionCasa {
+
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seleccionCasa img {
+
+    width: 50rem;
+    height: 50rem;
+    border-radius: 5rem;
+    margin-top: 10rem;
+}
+
+.seleccionCasa button {
+
+    padding: 1rem 5rem 1rem 5rem;
+    width: 30rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    font-weight: 800;
+    border: none;
+}
+
+.seleccionCasa button:hover {
+
+    background-color: greenyellow;
+    color: black;
+}
+
+.botonSalidaJava {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    font-weight: 1000;
+    border-color: black;
+    
+}
+
+.seleccionAnimal button {
+
+    width: 15rem;
+    height: 5rem;
+}
+
+.botonSelect {
+    
+    width: 35rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #ffd890 ;
+    color: rgb(114, 67, 16);
+    border-color: aliceblue;
+    margin: 1rem;
+}
+
+.seleccionBoton {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalAnimal{
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0.5;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.modalContainer{
+
+    background-color: rgb(255, 186, 57);
+    color: white;
+    width: 90%;
+    max-width: 60rem;
+    max-height: 90%;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 3rem 6.5rem ;
+    display: grid;
+    gap: 2rem;
+    place-items: center;
+
+}
+
+.modalContainer img {
+
+    width: 50%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.modalContainer h3 {
+
+    font-size: 4rem;
+    background-color: rgb(255, 208, 0);
+    padding: 0rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.modalContainer p {
+
+    font-size: 4rem;
+    background-color: rgb(0, 0, 0);
+    padding: 0rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.modalShow{
+
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.botonVolver {
+
+    width: 12rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 0rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: #ffd890 ;
+    color: rgb(114, 67, 16);
+    border-color: aliceblue;
+
+}
+
+.modalLuchaBoggart{
+
+    position: fixed;
+    display: flex;
+    top: 0.1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.luchaBoggartContain {
+
+    display: grid;
+    color: white;
+    background-color: black;
+    width: 90%;
+    max-width: 60rem;
+    max-height: 90%;
+    padding: 3rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+
+}
+
+.botonesBoggart{
+
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.luchaBoggartContain img{
+
+    width: 30rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    box-shadow: 4px 5px 15px white;
+}
+
+.botonModalBoggart{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 3rem;
+    margin: 0.3rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    box-shadow: 2px 2px 10px white;
+    color: white;
+    background-color:#E3BE79;
+    border: aliceblue;
+}
+
+.botonModalBoggart:hover {
+
+    background-color: red;
+}
+
+.botonModalBoggart:active{
+
+    background-color: blue;
+}
+
+.mostrarModal {
+
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.groupBoggart{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombreBoggart{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+
+.idBoggart, .cosaFeliz{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #ffd890;
+    color: white;
+    font-weight: 900;
+}
+
+.lanzarHechizo {
+
+    display: flex;
+    margin-top: 2rem;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.containBoggartName {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.ataqueBoggart {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.groupBoggart {
+
+    padding-top: 5rem;
+}
+
+.ataqueBoggart {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containVerDatosEstudiante {
+
+    position: fixed;
+    display: flex;
+    margin-bottom: 4rem;
+    top: 0.1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.verDatosEstudiante {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 3rem auto auto auto;
+    background-color: #E3BE79;
+    border-radius: 1rem;
+    
+}
+
+.containerData {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.containerData p {
+
+    font-size: 2.8rem;
+}
+
+.imagenUser {
+
+    border-radius: 50%;
+}
+
+.detallesDatosEstudiante p {
+
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+}
+
+
+
+

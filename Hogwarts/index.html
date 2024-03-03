@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet"> 
+    <title>Ejercicio Java Script</title>
+</head>
+<body>
+    <section class="contenedor">
+        <header class="header">
+            <img src="Casas/logohogwarts.webp" alt="LOGO DE HOGWARTS" class="Imagen-hogwarts">
+            <h3 class="titulo-principal">ESTUDIANTE, BIENVENIDO A HOGWARTS</h3>
+        </header>
+        <form action="" class="information">
+            <label for="">Ingresa tu nombre: </label>
+            <input type="text" placeholder="Ingresa tu nombre:" id="nombre">
+            <label for="">Ingresa tu edad: </label>
+            <input type="text" placeholder="Ingresa tu edad:" id="edad">
+            <label for="">Ingresa tu linaje: </label>
+            <select name="" id="linaje">
+                <option value="mestizo">Mestizo</option>
+                <option value="sangrePura">Sangre Pura</option>
+                <option value="muggle">Muggle</option>
+            </select>
+            <label for="">Selecciona tus cualidades</label>
+            <select name="" id="cualidad">
+                <option value="audacia"> Audacia, Valor, Fuerza</option>
+                <option value="paciencia"> Paciencia, Justicia, Lealtad</option>
+                <option value="inteligencia">Inteligencia, Creatividad, Erudición </option>
+                <option value="astucia"> Astucia, Ambición, Determinación</option>
+            </select>
+            <button type="submit" id="submit"> <strong>Enviar</strong></button>
+        </form>
+    </section>    
+
+        <section  class="datosEstudiante">
+
+            <div class="groupData">
+
+                 <h2>BIENVENIDO ESTUDIANTE <br></h2>
+                <div class="details">
+
+                    <h2 class="register">TU REGISTRO FUE EXITOSO</h2>
+
+                        <p class="nombreLabel">Nombre: <br> </p>
+                        <p class="edadLabel">Edad: <br> </p>
+                        <p class="linajeLabel">Linaje: <br> </p>
+                        <p class="cualidadesLabel">Cualidades: <br> </p>
+
+                </div>
+                <button class="selectHouse"> <strong>Seleccionar Casa</strong></button>
+
+            </div>
+            <div class="house">
+
+            </div>
+
+            <div class="seleccionCasa">
+
+                <h2 class="studentHouse"></h2>
+
+            </div>
+        </section>
+
+        <div class="seleccionBoton">
+                 <button class="animalPatronus botonSelect">Seleccionar Animal</button>
+                 <button class="luchaBoggart botonSelect">Luchar contra un Boggart</button>
+                 <button class="verDatosPersonales botonSelect">Ver Datos Estudiante</button>
+        </div>
+
+        <section class="modalAnimal"> 
+
+            <div class="modalContainer">
+
+            </div>
+
+        </section>
+
+        <section class="modalLuchaBoggart">
+
+            <div class="luchaBoggartContain">
+                
+            </div>
+
+        </section>
+
+        <section class="containVerDatosEstudiante">
+
+            <div class="verDatosEstudiante">
+
+            </div>
+
+        </section>
+        
+
+
+    <script src="hogwarts.js"></script>
+</body>
+</html>
